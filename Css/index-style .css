@@ -1,0 +1,637 @@
+:root{
+    --main-color:#343434;
+    --main-font: 'Montserrat', sans-serif;
+}
+/* -------------------------------------- Fonts Classes ---------------------------------- */
+
+.fs-60{
+    font-size: 60px;
+}
+.fs-50{
+    font-size: 50px;
+}
+.fs-40{
+    font-size: 40px !important;
+
+}
+.fs-30{
+    font-size: 30px !important;
+
+}
+.fs-25{
+    font-size: 25px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-18{
+    font-size: 18px;
+   
+
+}
+
+.fs-16{
+    font-size: 16px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-13{
+    font-size: 13px;
+}
+
+.fw-100{
+    font-weight: 100;
+}
+.fw-200{
+    font-weight: 200;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-800{
+    font-weight: 800;
+}
+
+.f-main{
+    font-family: var(--main-font);
+    
+}
+.f-s-main{
+    font-family: monospace;
+}
+.main-color{
+    color: var(--main-color);
+}
+.bg-blc{
+    background-color: #1c1c1c;
+}
+.bg-main{
+    background-color: var(--main-color);
+}
+.text-blc{
+    color:var(--main-color);
+    font-weight: 800;
+    font-size: 30px;
+}
+.f-let{
+    letter-spacing: 1px;
+}
+
+.f-gry{
+    color: #999999;
+    font-size: 13px;
+    font-weight: 400;
+   
+
+}
+.f-gry-b{
+    color: #748182;
+    
+}
+.bg-gry-b{
+    background-color: #F4F4F4;
+    
+}
+.mt-15{
+    margin-top: 27px;
+}
+.mb-30{
+    margin-bottom: 60px;
+}
+.bg-gray {
+    background-color: #f7f7f7;
+}
+.w-8{
+    width: 8%;
+}
+.out-line{
+    outline: none;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* -------------------- Nav Bar ------------------------------- */
+
+
+nav{
+    transition: all 1s !important;
+}
+nav .container {
+    width: 77%;
+}
+
+nav  .navbar-nav a{
+    color: white !important;
+    font-size:16px !important ;
+    position: relative;
+}
+nav  .navbar-nav a::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 0%;
+    height: 1.5px;
+    left: 7;
+    bottom: 0;
+    transition: all 0.8s;
+}
+nav  .navbar-nav a:hover::before {
+    width: 80%;
+    margin: auto;
+   
+}
+.bg-dark{
+    background-color:  var(--main-color)!important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+   
+}
+.color{
+    color: black !important;
+
+}
+.navbar-toggler{
+    transition: all 1s !important;
+}
+
+body:not(:has(:target)) .nav .active::before,
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.works:target) .works-link::before,
+body:has(.clients:target) .clients-link::before,
+body:has(.team:target) .team-link::before ,
+body:has(.contact:target) .contact-link::before
+
+
+{
+    width: 77%;
+   
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/* ------------------------ Header Section ------------------------------------ */
+
+header{
+    background: linear-gradient(rgba(0,0,0,0.6) 0% 100%) , url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    font-size: 60px;
+    font-weight: 100;
+}
+header h1 span{
+    
+    font-weight: 400;
+}
+
+header .social li {
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+ 
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* -------------------------------- About Section -------------------------- */
+/* .dot {
+    width: 500px ;
+    height: 50px;
+    background-color: blueviolet;
+    background-image: radial-gradient(gray 2px ,transparent 2px );
+    background-size: 20px 20px;
+
+    
+} */
+
+.container{
+    width: 77%;
+}
+/* .about-left{
+    position: relative;
+   
+} */
+/* .dot{
+    position: absolute;
+    top: 200;
+    width: 50%;
+    height: 360px;
+    background-image: radial-gradient(rgb(206, 205, 205) 1px ,transparent 1px );
+    background-size: 12px 12px;
+
+} */
+
+.about .about-image{
+    position: relative;
+   
+}
+
+img{
+    
+    width: 100%;
+}
+ .about-image::before{
+      content: "";
+      position: absolute;
+     
+       left: -33;
+       bottom: -33;
+       width: 100%;
+       height: 80%;
+       z-index: -1;
+      background-image: radial-gradient(rgb(206, 205, 205) 1px ,transparent 1px );
+      background-size: 10px 10px;
+
+
+}
+.progress{
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.14) inset;
+    height: 25px;
+   
+
+}
+.progress-bar{
+    border-radius: 0 5px 5px  0 ;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.about-right a{
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn{
+    transition: all 1s !important;
+}
+.btn-grop .bg-blc:hover{
+    background-color: transparent !important;
+   
+    border: 1px solid black !important;
+}
+.btn-grop .bg-blc:hover span{
+    
+    color: black !important;
+   
+
+}
+.btn-grop .bg-white:hover{
+
+    background-color: #1c1c1c !important;
+   
+}
+.btn-grop .bg-white:hover span{
+    
+    color: white !important;
+   
+}
+/* ------------------------------------------------------------------------------ */
+
+/* --------------------------------- Services Section -------------------------- */
+
+
+.services span , .clients .spn ,
+ .works .main-title span , 
+ .team .main-title span ,
+ .contact .main-title span
+ {
+    position: relative;
+    z-index: 555;
+    
+}
+.services span::after ,
+.clients .spn::after ,
+.works .main-title span::after ,
+.team .main-title span::after,
+.contact .main-title span::after{
+     content: "";
+      position: absolute;
+       bottom: -4; 
+       left: 0;
+       width: 100%;
+       height: 27px;
+       z-index: -1;
+      background-image: radial-gradient(rgb(206, 205, 205) 1px ,transparent 1px );
+      background-size: 12px 12px;
+
+
+}
+.services{
+    margin-top: 9%;
+}
+.services .service-item{
+ 
+    padding-bottom: 50px;
+   
+    border-radius: 2px;
+}
+.services .icon i{
+    font-size: 28px;
+    text-align: center;
+    color: var(--main-color);
+    transition: all 0.5s;
+
+}
+.services .icon{
+    transition: all 0.8s;
+    width: 70px;
+    height:70px;
+    background-color:#EEEEEE ;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all 0.5;
+    
+}
+
+.services .service-item .service-content p , .clients p{
+   
+    width: 80%;
+    margin: auto;
+    color: #748182;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+/* ------------------ Hovers ----------------------------- */
+.services .icon:hover{
+    background-color:var(--main-color) ;
+
+
+}
+.services .icon:hover i{
+   color: white;
+
+}
+/* -------------------------------------------------------------------------------- */
+
+/* --------------------------------------- Works Section -------------------------------- */
+
+/* ------------------------------ Taps -------------------------- */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    transition: all 1s !important;
+    color: var(--main-color);
+
+    font-family: var(--main-font);
+    font-size: 16px;
+    background-color:transparent;
+    position: relative;
+}
+.nav-pills .nav-link.active::after, .nav-pills .show>.nav-link::after{
+    content: "";
+    width: 40%;
+    height: 3px;
+    margin: auto;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 4;
+    left: 15;
+   
+}
+.works .nav-link{
+    color: var(--main-color);
+
+    font-family: var(--main-font);
+    font-size: 16px;
+}
+.nav-pills .show>.nav-link{
+    
+    color: green;
+}
+/* ---------------------------------------------------------------------- */
+
+/* ---------------- Parent Position -------------------------- */
+
+ .works .image-item{
+    transition: all 1s;
+    position: relative;
+}
+
+/* ------------------------------------------------------- */
+
+/* ------------------------- overlay Layer ----------- */
+
+ .works  .image-item .overlay-img{
+    transition: all 0.7s;
+    background-color: white;
+    position: absolute;
+    top: 5;
+    bottom:5;
+    left: 5;
+    right: 5;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------------------------------------ */
+
+/* -------------------- Content ------------------------ */
+
+.works  .image-item .overlay-content{
+   
+    top: 45%;
+   opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 6;
+    transform: translateY(-50%);
+    transition: all 0.7s ;
+
+}
+
+.works h6{
+    color: var(--main-color);
+    font-family: var(--main-font);
+    letter-spacing: 2px;
+    font-size: 12px;
+    
+    
+
+}
+/* --------------------------------------- */
+
+/* ------------------------------------------ Icons ------------------ */
+
+.works .image-item .overlay-icons{
+   
+    position: absolute;
+    width: 100%;
+    z-index: 6;
+    bottom: -27%;
+    transform: translateY(-50%);
+
+    transition: all 0.8s ;
+}
+
+ .ico {
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50%;
+    background-color: var(--main-color);
+
+}
+.icons i{
+   
+    font-size: 14px;
+    color: white;
+}
+/* ---------------------------------------------------------------- */
+/* --------------------------- Hovers ------------------ */
+
+.works  .image-item:hover .overlay-img{
+    background-color: rgba(255,255,255,0.9);
+    opacity: 1;
+   
+   
+   
+}
+.works  .image-item:hover .overlay-content {
+    opacity: 1;
+
+}
+.works .image-item:hover .overlay-icons{
+    bottom: 30%;
+}
+/* ---------------------------------------------------- */
+/* ------------------------------------------------------------ ------------------------------------------------ */
+
+
+
+
+
+
+
+/* -------------------------- Clients Section ---------------------------- */
+.clients .inner p{
+    width: 73%;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 500;
+}
+.clients .inner span{
+    font-size: 14px;
+    color: #888888;
+    font-weight: 600;
+   
+
+}
+.clients .carousel-indicators [ data-bs-target]{
+    width: 10px;
+    height: 10px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+/* ------------------------------------------------------------------------ */
+
+/* --------------------------------------------------- Team Section ---------------------------- */
+.card .card-body{
+    border-radius: 0px 0px 7px 7px !important;
+    background-color: #5b5b5b;
+    font-family: monospace;
+    font-weight: 800 !important;
+}
+
+.team .image img{
+    transition: all 0.6s ease-in-out; 
+
+}
+
+
+.team .image:hover img{
+    transform: scale(1.15); 
+}
+.team .image{
+    position: relative;
+}
+ .team .over-layer{
+    position: absolute;
+       top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(255,255,255,0.9);
+     opacity: 0;
+     transform: rotateY(180deg) scale(0.5, 0.5);
+      transition: all 0.8s;
+    
+
+ }
+ .team li{
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+
+ }
+/* ------------------------ Hovers -------------------- */
+
+.team li:hover{
+    
+    background-color: white;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+
+ }
+ .team li:hover i{
+    color: var(--main-color) !important;
+ }
+.team .card:hover .over-layer{
+    top: 5;
+    left: 5;
+    right: 5;
+    bottom: 5;
+    opacity: 1;
+    transform: rotateY(360deg)
+    
+
+}
+/* --------------------------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------- Contact Section -------------------------------- */
+.contact .container{
+    width: 65% !important;
+}
+.contact .contact-icon{
+    width: 60px;
+    height: 60px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+}
+.contact .col-md-4 .contact-icon , .contact .col-md-4 i{
+    transition: all 0.7s;
+}
+
+.contact .col-md-4:hover .contact-icon {
+    background-color: var(--main-color);
+
+}
+.contact .col-md-4:hover i{
+    color: white;
+}
+.form-control:focus{
+   background-color:  #F4F4F4;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+}
+.contact .btn{
+    padding-left: 38px;
+    padding-right: 38px;
+    transition:  all 0.7s;
+}
+.contact .btn:hover{
+    background-color: white;
+    border: 1px solid var(--main-color);
+    color: var(--main-color) !important;
+}
+
+
