@@ -2,6 +2,9 @@
     --main-color:#343434;
     --main-font: 'Montserrat', sans-serif;
 }
+html , body{
+    scroll-behavior: auto !important;
+}
 /* -------------------------------------- Fonts Classes ---------------------------------- */
 
 .fs-60{
@@ -559,8 +562,8 @@ img{
       right: 0;
       bottom: 0;
       background-color: rgba(255,255,255,0.9);
-     opacity: 0;
-     transform: rotateY(180deg) scale(0.5, 0.5);
+      opacity: 0;
+      transform: rotateY(180deg) scale(0.5, 0.5);
       transition: all 0.8s;
     
 
